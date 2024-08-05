@@ -37,6 +37,20 @@
 
 	
   </properties>
+  
+  
+	<!-- To upload jar-->
+	<distributionManagement>
+		<!-- don't forget to add the server credentials to your settings.xml -->
+		<repository>
+			<id>businesscentral-m2-repo</id>
+			<name>JBPM Workbench Repo</name>
+			<url>https://insights-workbench-dc4h-qa-1-8a.apps.okd-01.e1.frame42.net/business-central/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
