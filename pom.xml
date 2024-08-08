@@ -45,7 +45,8 @@
 		<repository>
 			<id>businesscentral-m2-repo</id>
 			<name>JBPM Workbench Repo</name>
-			<url>https://insights-workbench-dc4h-qa-1-8a.apps.okd-01.e1.frame42.net/business-central/maven2/</url>
+			<!--url>https://insights-workbench-dc4h-qa-1-8a.apps.okd-01.e1.frame42.net/business-central/maven2/</url-->
+			<url>https://insights-workbench-dc4h-dev-2-0.apps.okd-01.e1.frame42.net/business-central/maven2/</url>
 		</repository>
 	</distributionManagement>
 
@@ -139,12 +140,23 @@
           </execution>
         </executions>
       </plugin>
-	  <plugin>
+	  <!--plugin>
 		<groupId>org.kie</groupId>
 		<artifactId>kie-maven-plugin</artifactId>
 		<version>7.74.1.Final</version>
 		<extensions>true</extensions>
-	  </plugin>
+	  </plugin-->
+	  
     </plugins>
+	
+	<extensions>
+      <!-- Enabling the use of SSH -->
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ssh-external</artifactId>
+         <version>1.0-beta-6</version>
+      </extension>
+    </extensions>
+	
   </build>  
 </project>
