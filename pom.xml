@@ -46,7 +46,8 @@
 			<id>businesscentral-m2-repo</id>
 			<name>JBPM Workbench Repo</name>
 			<!--url>https://insights-workbench-dc4h-qa-1-8a.apps.okd-01.e1.frame42.net/business-central/maven2/</url-->
-			<url>https://insights-workbench-dc4h-dev-2-0.apps.okd-01.e1.frame42.net/business-central/maven2/</url>
+			<!--url>https://insights-workbench-dc4h-dev-2-0.apps.okd-01.e1.frame42.net/business-central/maven2/</url-->
+			<url>http://localhost:8080/business-central/maven2/</url>
 		</repository>
 	</distributionManagement>
 
